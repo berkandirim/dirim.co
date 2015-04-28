@@ -1,3 +1,5 @@
 config.codekit
 .idea
 .idea/*
+.sass-cache
+.sass-cache/*
