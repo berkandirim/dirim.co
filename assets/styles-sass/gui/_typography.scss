@@ -29,7 +29,6 @@ a {
 }
 
 .site-desc {
-  padding-left: 2px;
   &:after {
     content: "";
     display: block;
@@ -43,7 +42,7 @@ a {
   white-space: normal;
   display: block;
   max-width: 640px;
-  padding: 0 10px 0 2px;
+  padding-right: 10px;
 }
 
 .contact {
