@@ -8,6 +8,7 @@ body {
   background-color: #f1f1f1;
   color: #333;
   font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -29,18 +30,19 @@ a {
   height: 100%;
   min-height: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  white-space: nowrap;
   &:before {
     content: "";
     height: 100%;
-    width: 1px;
-    margin-left: -1px;
+    margin-right: -0.25em;
     display: inline-block;
     vertical-align: middle;
   }
 }
 
 .box {
+  width: 100%;
+  padding: 10px;
   margin-top: -100px;
   display: inline-block;
   vertical-align: middle;
@@ -48,7 +50,7 @@ a {
 
 .site-title {
   font-weight: 300;
-  margin-bottom: .1em;
+  margin-bottom: .25em;
 }
 
 .site-desc {
@@ -60,4 +62,11 @@ a {
     margin: 1em 0;
     border-bottom: 1px solid;
   }
+}
+
+.info {
+  white-space: normal;
+  display: block;
+  max-width: 640px;
+  padding-right: 10px;
 }
