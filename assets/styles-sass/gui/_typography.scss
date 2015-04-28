@@ -1,0 +1,57 @@
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $link-color;
+  padding: 2px;
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
+  &:hover {
+    color: $text-color;
+    background-color: $link-bg-color;
+  }
+}
+
+.site-title {
+  font-weight: 300;
+  margin-bottom: .25em;
+}
+
+.site-desc {
+  padding-left: 2px;
+  &:after {
+    content: "";
+    display: block;
+    width: 3em;
+    margin: 1em 0 0;
+    border-bottom: 1px solid;
+  }
+}
+
+.info {
+  white-space: normal;
+  display: block;
+  max-width: 640px;
+  padding-right: 10px;
+}
+
+.contact {
+  margin-top: 2em;
+  a {
+    font-size: 1.2em;
+    color: $color-grey;
+    margin-right: .75em;
+    &:hover {
+      color: $link-color;
+      background-color: transparent;
+    }
+  }
+}
+

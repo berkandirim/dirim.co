@@ -1,71 +1,13 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@import "settings/settings";
+@import "gui/gui";
 
-body {
-  background-color: #f1f1f1;
-  color: #333;
-  font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
 
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
 
-a {
-  color: #6e9ecf;
-  padding: 2px;
-  text-decoration: none;
-  transition: all ease-in-out 300ms;
-  &:hover {
-    color: #333;
-    background-color: #ffd041;
-  }
-}
 
-.page {
-  max-width: 640px;
-  height: 100%;
-  min-height: 100%;
-  margin: 0 auto;
-  white-space: nowrap;
-  &:before {
-    content: "";
-    height: 100%;
-    margin-right: -0.25em;
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
 
-.box {
-  padding: 10px;
-  margin-top: -100px;
-  display: inline-block;
-  vertical-align: middle;
-}
 
-.site-title {
-  font-weight: 300;
-  margin-bottom: .25em;
-}
 
-.site-desc {
-  padding-left: 2px;
-  &:after {
-    content: "";
-    display: block;
-    width: 3em;
-    margin: 1em 0;
-    border-bottom: 1px solid;
-  }
-}
 
-.info {
-  white-space: normal;
-  display: block;
-  max-width: 640px;
-  padding-right: 10px;
-}
+
+
+

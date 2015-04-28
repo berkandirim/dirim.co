@@ -3,3 +3,4 @@ config.codekit
 .idea/*
 .sass-cache
 .sass-cache/*
+README.html
