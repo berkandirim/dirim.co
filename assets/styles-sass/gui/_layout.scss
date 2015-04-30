@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -19,7 +23,7 @@ html, body {
   }
 }
 
-.box {
+.wrapper {
   padding: 10px;
   display: inline-block;
   vertical-align: middle;

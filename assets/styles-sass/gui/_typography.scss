@@ -25,10 +25,11 @@ a {
 
 .site-title {
   font-weight: 300;
-  margin-bottom: .25em;
+  margin: 0 0 0 -1px;
 }
 
 .site-desc {
+  color: $color-grey;
   &:after {
     content: "";
     display: block;
