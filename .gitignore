@@ -1,6 +1,6 @@
 config.codekit
 .idea
-.idea/*
 .sass-cache
-.sass-cache/*
+.map
 README.html
+bower_components
