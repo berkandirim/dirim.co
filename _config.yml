@@ -1,4 +1,3 @@
-baseurl: /
 timezone: Europe/Istanbul
 destination: _build
 exclude: ['README.md', '.sass-cache']
