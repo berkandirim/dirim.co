@@ -1,7 +1,7 @@
-baseurl: /glowing-archer
+baseurl: /
 timezone: Europe/Istanbul
 destination: _build
-exclude: ['README.md', '.sass-cache', 'glowing-archer.sublime-project', 'glowing-archer.sublime-workspace']
+exclude: ['README.md', '.sass-cache']
 include: [.htaccess]
 markdown: redcarpet
 highlighter: pygments
@@ -16,6 +16,5 @@ defaults:
             categories: "conferenece"
             layout: "post"
             comments: true
-
 gems:
     - jekyll-sitemap
