@@ -1,0 +1,104 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "kepler-std", Georgia, serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: #aaa;
+    }
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #999;
+}
+
+.current, .current:hover {
+    text-decoration: line-through;
+}
+
+.site-title {
+    margin-bottom: 0;
+    color: #ff0000;
+    a {
+        color: #ff0000;
+        text-decoration: none;
+        &:hover, &:visited {
+            @extend .site-title;
+        }
+    }
+}
+
+.site-desc {
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.site-title, .site-desc {
+    display: inline;
+}
+
+.site-message {
+    margin: 30px 0;
+    font-size: 3.375em;
+    line-height: 1.2;
+}
+
+.post-list, .project-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.project-list {
+    li {
+        padding: 20px;
+        position: relative;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover {
+            background-color: #efefef;
+        }
+    }
+}
+
+.project-title {
+    margin: 0 0 10px;
+    line-height: 1;
+    font-size: 3.375em;
+    font-weight: 400;
+}
+
+.project-description {
+    font-size: 1em;
+    margin: 0;
+}
+
+.share {
+    margin: 20px 0 40px;
+}
+
+.projects {
+    h2 {
+        display: inline;
+        border-bottom: 1px solid;
+    }
+}
+

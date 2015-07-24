@@ -1,0 +1,14 @@
+.nav {
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            border-bottom: 2px solid;
+            text-decoration: none;
+        }
+    }
+
+    .current {
+        font-weight: 700;
+    }
+}

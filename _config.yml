@@ -1,0 +1,21 @@
+baseurl: /glowing-archer
+timezone: Europe/Istanbul
+destination: _build
+exclude: ['README.md', '.sass-cache', 'glowing-archer.sublime-project', 'glowing-archer.sublime-workspace']
+include: [.htaccess]
+markdown: redcarpet
+highlighter: pygments
+permalink: /blog/:year/:month/:day/:title/
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            author: "Berkan Dirim"
+            categories: "conferenece"
+            layout: "post"
+            comments: true
+
+gems:
+    - jekyll-sitemap

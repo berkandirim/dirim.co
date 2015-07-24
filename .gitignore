@@ -1,6 +1,3 @@
-config.codekit
-.idea
+_build
 .sass-cache
-.map
-README.html
-bower_components
+.idea

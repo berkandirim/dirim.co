@@ -1,0 +1,14 @@
+@media all and (max-width: 480px) {
+  .site-info, .main-nav {
+    float: none;
+    width: auto;
+  }
+
+  .nav {
+    text-align: left;
+  }
+
+  .site-message, .project-title {
+    font-size: 2.25em;
+  }
+}

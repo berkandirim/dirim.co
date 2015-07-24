@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /projects/
+class: projects
+title: Projects
+---
+
+<h2>Some of the projects I've worked on so far</h2>
+
+<ul class="project-list">
+    {% for project in site.data.projects %}
+    <li>
+        <h3 class="project-title">{% if project.link %}<a href="{{project.link}}" target="_blank">{% endif %}{{project.title}}</a></h3>
+        <p class="project-description">{{project.description}}</p>
+    </li>
+    {% endfor %}
+</ul>
