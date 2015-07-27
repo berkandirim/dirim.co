@@ -6,6 +6,8 @@ include: [.htaccess]
 markdown: redcarpet
 highlighter: pygments
 permalink: /blog/:year/:month/:day/:title/
+sass:
+  style: compressed
 defaults:
     -
         scope:
