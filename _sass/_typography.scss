@@ -66,13 +66,16 @@ hr {
     list-style: none;
 }
 
+.post-list {
+    h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}
+
 .project-list {
     li {
         padding: 20px;
-        position: relative;
-        &:last-child {
-            border-bottom: none;
-        }
         &:hover {
             background-color: #efefef;
         }
@@ -82,24 +85,16 @@ hr {
 .project-title {
     margin: 0 0 10px;
     line-height: 1;
-    font-size: 3.375em;
+    font-size: 2.25em;
     font-weight: 400;
 }
 
 .project-description {
-    font-size: 1em;
     margin: 0;
 }
 
 .share {
     margin: 20px 0 40px;
-}
-
-.projects {
-    h2 {
-        display: inline;
-        border-bottom: 1px solid;
-    }
 }
 
 .blog-post {

@@ -8,15 +8,5 @@ highlighter: pygments
 permalink: /blog/:year/:month/:day/:title/
 sass:
   style: compressed
-defaults:
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            author: "Berkan Dirim"
-            categories: "conferenece"
-            layout: "post"
-            comments: true
 gems:
     - jekyll-sitemap
