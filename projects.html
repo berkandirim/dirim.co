@@ -10,8 +10,10 @@ title: Projects
 <ul class="project-list">
     {% for project in site.data.projects %}
     <li>
-        <h2 class="project-title">{% if project.link %}<a href="{{project.link}}" target="_blank">{% endif %}{{project.title}}</a></h2>
-        <p class="project-description">{{project.description}}</p>
+        <a href="{% if project.link %}{{project.link}}{% endif %}" target="_blank">
+            <h2 class="project-title">{{project.title}}</h2>
+            <p class="project-description">{{project.description}}</p>
+        </a>
     </li>
     {% endfor %}
 </ul>
