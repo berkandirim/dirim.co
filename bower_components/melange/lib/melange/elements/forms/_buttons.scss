@@ -1,0 +1,130 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Button Styles
+    ------------------------------------------- **/
+/**
+ * Button colors
+ */
+@mixin button-colors($type){
+    background-color: map-get($base-colors, $type);
+    color: map-get($base-colors, #{$type}-text);
+
+    &:hover {
+        @if (map-get($base-colors, #{$type}-highlight) != null) {
+            background-color: map-get($base-colors, #{$type}-highlight);
+        }
+
+        @else {
+            background-color: darken(map-get($base-colors, $type), 7.5);
+        }
+        color: map-get($base-colors, #{$type}-text);
+    }
+}
+
+
+/**
+ * In most cases, using buttons with button tag allows more styling options
+ * it is cross browser and meaningful. Also ".button" class is added in order to
+ * get button-like elements
+ */
+%button {
+    @include prefixer(apperance, none);
+    @include disable-text-select();
+    @include app-transition();
+
+    display: inline-block;
+    cursor: pointer;
+    padding: $base-input-spacing (3 * $base-input-spacing);
+    line-height: normal;
+    text-decoration: none;
+
+    @if($base-button-border-radius != null){
+        border-radius: $base-button-border-radius;
+    }
+
+    @include button-colors('standart');
+
+    &:disabled,
+    &.disabled {
+        cursor: default;
+        @include button-colors('disabled');
+    }
+
+    &:active {
+        @include box-shadow(inset 0 2px 3px rgba(0, 0, 0, .3));
+    }
+}
+
+/**
+ * Native button elements
+ * Input button elements
+ */
+button,
+input[type="submit"],
+input[type="reset"],
+input.button {
+    @extend %button;
+    border: transparent;
+}
+
+/**
+ * Anchor and other elements
+ */
+.button {
+    @extend %button;
+    text-align: center;
+
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+@if($support-for-ie8 == true){
+    [class*="#{$action-button}"]{
+        @extend %button;
+    }
+    [class*="#{$action-button-wrapper}"] {
+        display: inherit;
+        cursor: inherit;
+        padding: inherit;
+        background: inherit;
+        font-weight: inherit;
+        text-align: inherit;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: inherit;
+        }
+    }
+}
+@else {
+    [class*="#{$action-button}"]:not([class*="#{$action-button-wrapper}"]) {
+        @extend %button;
+    }
+}
+/** 
+ * Action Buttons
+ * specificity increased in order to overwrite [class*="#{$action-button}"]:not([class*="#{$action-button-wrapper}"])
+ * without using !important rule. By this, it can easily modified `.some-class .primary-action` selector
+ */
+.#{$primary-button}.#{$primary-button} {
+    @include button-colors('primary');
+}
+
+.#{$secondary-button}.#{$secondary-button} {
+    @include button-colors('secondary');
+}
+
+.#{$tertiary-button}.#{$tertiary-button} {
+    @include button-colors('tertiary');
+}
+
+.#{$cancel-button}.#{$cancel-button},
+input[type="reset"] {
+    @include button-colors('cancel');
+}

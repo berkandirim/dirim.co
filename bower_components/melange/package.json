@@ -1,0 +1,27 @@
+{
+  "name": "melange",
+  "version": "0.6.1",
+  "description": "A low level SASS based CSS framework for general usage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcinarli/melange.git"
+  },
+  "dependencies": {
+	"kafein": "latest"
+  },
+  "devDependencies": {
+	  "sass": "latest"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "css-framework",
+    "style"
+  ],
+  "author": "Bilal Cinarli <bcinarli@gmail.com> (http://bcinarli.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcinarli/melange/issues"
+  },
+  "homepage": "https://github.com/bcinarli/melange"
+}

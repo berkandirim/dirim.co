@@ -1,0 +1,148 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Flex Mixins
+    ------------------------------------------- **/
+/**
+ * CSS Flex
+ *
+ * Outputs Flex code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+ * Formal syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+ * current spec, webkit browsers need prefixing
+ */
+@mixin flex($content...) {
+	@include value-prefixer(display, flex, $content, webkit);
+}
+
+/**
+ * CSS Flex Basis
+ *
+ * Outputs Flex-Basis code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+ * Formal syntax: content | <'width'>
+ * Initial Value: auto
+ * current spec, webkit browsers need prefixing, however Safari is not supporting this feature
+ *
+ * Notes
+ * When a non-auto flex-basis is specified, Internet Explorer 10-11 (but not 12+) always 
+ * uses a content-box box model to calculate the size of a flex item, even if 
+ * box-sizing: border-box is applied to the element.
+ *
+ */
+@mixin flex-basis($content) {
+	@include prefixer(flex-basis, $content, webkit);
+}
+
+/**
+ * CSS Flex Direction
+ *
+ * Outputs Flex-Direction code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+ * Formal syntax: content | [row | row-reverse | column | column-reverse]
+ * current spec, webkit browsers need prefixing, however Safari is not supporting this feature
+ */
+@mixin flex-direction($content) {
+	@include prefixer(flex-direction, $content, webkit);
+}
+
+/**
+ * CSS Flex Grow
+ *
+ * Outputs Flex-Grow code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+ * Formal syntax: <number>
+ * Initial Value: 0
+ * Negative values are invalid.
+ * current spec, webkit browsers need prefixing, Internet explorer and Safari is 
+ * not supporting this feature
+ */
+@mixin flex-grow($number) {
+	@include prefixer(flex-grow, $number, webkit);
+}
+
+/**
+ * CSS Flex Shrink
+ *
+ * Outputs Flex-Shrink code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+ * Formal syntax: <number>
+ * Initial Value: 1
+ * Negative values are invalid.
+ * current spec, webkit browsers need prefixing, Internet explorer and Safari is 
+ * not supporting this feature
+ *
+ * Notes:
+ * Internet Explorer 10 uses 0 instead of 1 as the initial value for the flex-shrink property. 
+ * A workaround is to always set an explicit value for flex-shrink.
+ */
+@mixin flex-shrink($number) {
+	@include prefixer(flex-shrink, $number, webkit);
+}
+
+/**
+ * CSS Flex Wrap
+ *
+ * Outputs Flex-Wrap code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+ * Formal syntax: content | [nowrap | wrap | wrap-reverse]
+ * Initial Value: nowrap
+ * current spec, webkit browsers need prefixing
+ */
+@mixin flex-wrap($content) {
+	@include prefixer(flex-wrap, $content, webkit);
+}
+
+/**
+ * CSS Flex Align Content
+ *
+ * Outputs align-content code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+ * Formal syntax: content | [flex-start | flex-end | center | space-between | space-around | stretch]
+ * Initial Value: strecth
+ * current spec, webkit browsers need prefixing
+ *
+ * Notes:
+ * Internet Explorer and Safari are not supporting this feature yet even with vendor prefix
+ */
+@mixin align-content($content) {
+	@include prefixer(align-content, $content, webkit);
+}
+
+/**
+ * CSS Flex Align Items
+ *
+ * Outputs align-items code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+ * Formal syntax: content | [flex-start | flex-end | center | baseline | stretch]
+ * Initial Value: strecth
+ * current spec, webkit browsers need prefixing
+ */
+@mixin align-items($content) {
+	@include prefixer(align-items, $content, webkit);
+}
+
+/**
+ * CSS Flex Align Self
+ *
+ * Outputs align-self code with defined prefixes
+ * http://caniuse.com/#search=flex
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+ * Formal syntax: content | [auto | flex-start | flex-end | center | baseline | stretch]
+ * Initial Value: auto
+ * current spec, webkit browsers need prefixing
+ *
+ * Notes:
+ * Safari is not supporting this feature yet even with vendor prefix
+ */
+@mixin align-self($content) {
+	@include prefixer(align-self, $content, webkit);
+}

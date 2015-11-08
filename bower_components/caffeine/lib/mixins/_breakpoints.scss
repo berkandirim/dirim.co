@@ -1,0 +1,68 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Common Break Points
+    ------------------------------------------- **/
+/**
+ * Mobile phones / smaller screens portrait mode
+ *
+ */
+
+@mixin mobile-portrait() {
+	@media only screen and (max-width : 320px) {
+		@content;
+	}
+}
+
+/**
+ * Mobile phones / smaller screens landscape mode
+ *
+ */
+
+@mixin mobile-landscape() {
+	@media only screen and (min-width : 321px) {
+		@content;
+	}
+}
+
+/**
+ * Tablets / medium sized screens portrait mode
+ *
+ */
+
+@mixin tablet-portrait() {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+		@content;
+	}
+}
+
+/**
+ * Tablets / medium sized screens landscape mode
+ *
+ */
+
+@mixin tablet-landscape() {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+		@content;
+	}
+}
+
+/**
+ * Common desktop/laptops
+ */
+@mixin desktop(){
+	@media only screen  and (min-width : 1224px) {
+		@content;
+	}
+}
+
+/**
+ * Widescreens
+ *
+ */
+
+@mixin widescreen() {
+	@media only screen  and (min-width : 1824px) {
+		@content;
+	}
+}

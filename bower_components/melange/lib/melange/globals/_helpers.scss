@@ -1,0 +1,55 @@
+/* @author Bilal Cinarli */
+
+/**
+ * Not real functions of mixins but set of definitions for resetting or reformatting an element
+ */
+
+/** -------------------------------------------
+    Helper Definitions
+    ------------------------------------------- **/
+/**
+ * Hard reset for an element
+ */
+%reset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    list-style: none;
+}
+
+
+/**
+ * Vertical Center
+ */
+%vertical {
+    position: absolute !important;
+    top: 50%;
+    margin-top: -.5em;
+}
+
+
+/**
+ * Horizontal Center
+ */
+%horizontal {
+    position: absolute !important;
+    left: 50%;
+    margin-left: -.5em;
+}
+
+/**
+ * Center Alignment
+ */
+%center {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/**
+ * Floats
+ */
+%column {
+    float: left;
+}

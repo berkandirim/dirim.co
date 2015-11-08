@@ -1,0 +1,37 @@
+{
+  "name": "caffeine",
+  "version": "0.5.1",
+  "homepage": "https://github.com/bcinarli/caffeine",
+  "authors": [
+    "Bilal Cinarli <bcinarli@gmail.com>"
+  ],
+  "description": "Caffeine is a set of Sass mixins and functions ready use for projects.",
+  "main": "lib/_caffeine.scss",
+  "keywords": [
+    "sass",
+    "css",
+    "sass-mixins",
+    "sass-functions",
+    "melange",
+    "style"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "docs",
+    "tests",
+    "test"
+  ],
+  "_release": "0.5.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.1",
+    "commit": "9a8c3b41656b235cc7c21bda3c56faeb9c4b57ef"
+  },
+  "_source": "git://github.com/bcinarli/caffeine.git",
+  "_target": "~0.5.1",
+  "_originalSource": "caffeine",
+  "_direct": true
+}

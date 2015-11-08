@@ -1,0 +1,67 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Visibility Related
+    ------------------------------------------- **/
+/*
+ * Hide element
+ */
+.is-hidden,
+.hide // for fallback older versions
+{
+    display: none;
+}
+
+/*
+ * Sometimes you do not hide the element
+ * `for-screenreader-only` the element will not hidden but
+ * visually invisible for accessibility 
+ */
+.for-screenreader-only {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+}
+
+/**
+ * Device visibility
+ */
+.desktop-visible {
+    // do not interfere element's display, just hide when not needed
+    @media screen and (max-width: $base-desktop - 1px){
+    	display: none;
+    }
+}
+
+.desktop-hidden,
+.tablet-visible {
+    @media screen and (min-width: $base-desktop){
+    	display: none;
+    }
+}
+
+.tablet-hidden {
+    // hide if in the tablet region
+    @media screen and (min-width: $base-phone + 1px) and (max-width: $base-tablet-landscape) {
+    	display: none;
+    }
+}
+
+.mobile-visible {
+    // do not interfere with mobile visibility, only hide bigger screens
+    @media screen and (min-width: $base-phone + 1px) {
+        display: none;
+    }
+}
+
+.mobile-hidden,
+.tablet-visible {
+    @media screen and (max-width: $base-phone) {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+/*! melange.css | @author Bilal Cinarli | melange.io */
+
+/**
+ * Loads the main containers. Each folder has _*.scss container file with the same name.
+ * This container files imports all other files in the same folder.
+ */
+
+/** -------------------------------------------
+    General Settings
+    ------------------------------------------- **/
+// add settings to your styles before melange.
+//@import "settings/settings";
+
+
+
+/** -------------------------------------------
+    Internal Variables
+    ------------------------------------------- **/
+@import "melange/variables/variables";
+
+
+/** -------------------------------------------
+    Melange Internal Methods
+    ------------------------------------------- **/
+// use Caffeine
+//@import "melange/_system/system";
+
+
+/** -------------------------------------------
+    Global Styles
+    ------------------------------------------- **/
+@import "melange/globals/globals";
+
+
+/** -------------------------------------------
+    Layout Definitions
+    ------------------------------------------- **/
+@import "melange/layout/layout";
+
+
+/** -------------------------------------------
+    Base Element Styles
+    ------------------------------------------- **/
+@import "melange/elements/elements";
+
+
+/** -------------------------------------------
+    Default Components
+    ------------------------------------------- **/
+@import "melange/components/components";
