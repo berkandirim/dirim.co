@@ -1,0 +1,13 @@
+<header class="header row">
+    <div class="site-info nine-columns">
+        {% if page.url == '/' %}
+        <span class="site-title">Berkan Dirim</span>
+        {% else %}
+        <a class="site-title" href="{{site.baseurl}}/">Berkan Dirim</a>
+        {% endif %}
+        <span class="site-desc">Front-end Developer / Designer</span>
+    </div>
+    <div class="main-nav nine-columns">
+        {% include nav/_nav.html %}
+    </div>
+</header>

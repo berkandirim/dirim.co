@@ -1,0 +1,31 @@
+.main-nav {
+    position: relative;
+    text-align: right;
+
+    .nav {
+        margin-top: 12px;
+        a {
+            position: relative;
+            margin-right: 16px;
+            padding: 12px 0 0;
+            color: $color-black;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:after {
+                position: absolute;
+                border-width: 2px;
+                top: 0;
+            }
+            &.current {
+                font-weight: 700;
+                color: $color-dark-gray;
+                cursor: default;
+                &:after {
+                    width: 100%;
+                    border-color: $color-dark-gray;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 _build
 .sass-cache
 .idea
-*.codekit
+bower_components
+node_modules

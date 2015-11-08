@@ -5,11 +5,11 @@ class: blog
 title: Blog
 ---
 
-
+<h1 class="page-title">{{page.title}}</h1>
 <ul class="post-list">
     {% for post in site.posts %}
     <li>
-        <h2>
+        <h2 class="post-title">
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a> —
             <span class="date">{{post.date | date: '%Y/%m/%d'}}</span>
         </h2>

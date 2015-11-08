@@ -1,0 +1,23 @@
+a {
+    color: $color-red;
+    text-decoration: none;
+    -webkit-transition: all ease-in-out 300ms;
+    &:after {
+        content: '';
+        display: block;
+        margin-top: -1px;
+        border-bottom: 1px solid #000;
+        transition: all ease-in-out 300ms;
+        width: 0;
+    }
+
+
+    &:hover {
+        color: $color-black;
+
+        &:after {
+            width: 100%;
+        }
+    }
+
+}

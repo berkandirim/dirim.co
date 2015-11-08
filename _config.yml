@@ -2,8 +2,8 @@ url: http://www.dirim.co
 baseurl:
 timezone: Europe/Istanbul
 destination: _build
-exclude: ['README.md', '.sass-cache']
-include: [.htaccess]
+exclude: ['README.md', '.sass-cache', 'bower_components']
+include: ['.htaccess', 'fonts']
 markdown: redcarpet
 highlighter: pygments
 permalink: /blog/:year/:month/:day/:title/

@@ -1,0 +1,23 @@
+{
+  "name": "berkandirim",
+  "version": "0.1.0",
+  "homepage": "http://dirim.co",
+  "authors": [
+    "Berkan Dirim <berkandirim@gmail.com>"
+  ],
+  "description": "My personal website",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "caffeine": "~0.5.1",
+    "melange": "~0.6.1"
+  }
+}
