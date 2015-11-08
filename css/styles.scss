@@ -1,9 +1,28 @@
 ---
 ---
 
-@import "colors";
-@import "layout";
-@import "typography";
-@import "navigation";
-@import "assets";
-@import "responsive";
+//
+// Settings
+//
+@import "settings/settings";
+
+//
+// Caffeine Mixin Library
+//
+@import "../bower_components/caffeine/lib/caffeine";
+
+
+//
+// Melange Sass framework
+//
+@import "../bower_components/melange/lib/melange";
+
+//
+// GUI
+//
+@import "gui/gui";
+
+//
+// Auxiliary
+//
+@import "../bower_components/melange/lib/melange/auxiliary/auxiliary";

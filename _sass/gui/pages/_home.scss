@@ -1,0 +1,26 @@
+.site-message {
+    font-size: 3.375em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0 60px;
+}
+
+.contact {
+    margin-bottom: 60px;
+    &-title {
+        margin-bottom: 10px;
+    }
+    &-links {
+        a {
+            margin-right: 10px;
+            @include font-size(24px);
+            color: $color-gray;
+            &:hover {
+                color: $color-black;
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

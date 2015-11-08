@@ -1,0 +1,54 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font: 16px/1.5 "usual", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h3, h4 {
+    font-family: "ff-meta-serif-web-pro", Georgia, Times, serif;
+    font-weight: 700;
+}
+
+h1 {
+    @include font-size(36px);
+    margin-top: 24px;
+}
+
+h2 {
+    @include font-size(32px);
+}
+
+h3 {
+    @include font-size(24px);
+
+}
+
+h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h4 {
+    @include font-size(16px);
+    letter-spacing: rem(1.6px);
+}
+
+h5 {
+    @include font-size(16px);
+    font-size: 1em;
+}
+
+h6 {
+    @include font-size(11px);
+    font-weight: 400;
+    letter-spacing: rem(2.4px);
+}
+
+.page-title {
+    border-bottom: 1px solid $color-dark-gray;
+}

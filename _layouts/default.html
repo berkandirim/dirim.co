@@ -1,52 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Berkan Dirim{% if page.title %} · {{page.title}}{% endif %}</title>
-    <meta name="description" content="{{page.meta}}">
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
-    <link rel="shortcut icon" href="{{site.baseurl}}/images/favicon.png" type="image/x-icon" />
-    <script src="//use.typekit.net/vir0sky.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-</head>
+{% include layout/_head.html %}
 <body class="{% if page.path contains '_posts' %}blog-post{%else%}{{page.class}}{% endif %}">
-<div class="wrapper">
-    <header class="header">
-        <div class="site-info">
-            <h1 class="site-title">
-                {% if page.url == '/index.html' %}
-                Berkan Dirim
-                {% else %}
-                <a href="{{site.baseurl}}/">Berkan Dirim</a>
-                {% endif %}
-            </h1> ·
-            <h6 class="site-desc">Front-end Developer / Designer</h6>
-        </div>
-        <div class="main-nav">
-            {% include _nav.html %}
-        </div>
-        <hr class="clearfix">
-        {% if page.url == '/index.html' %}
-            {% include _site-message.html %}
-        {% endif %}
-    </header>
+    <div class="page-wrapper row">
+        {% include layout/_header.html %}
 
-    <section class="content">
-        {{content}}
-    </section>
-    
-    <footer class="footer">
-        <hr>
-        <span class="copyright">&copy; 2015 Berkan Dirim. Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://pages.github.com">GitHub Pages</a>. You can view this website's <a
-                href="https://github.com/berkandirim/berkandirim.github.io">source code</a>.</span>
-    </footer>
-</div>
+        <section class="content eighteen-columns">
+            {{content}}
+        </section>
+
+        {% include layout/_footer.html %}
+    </div>
 
 {% if page.path contains '_posts' %}
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-559e72d064021402" async="async"></script>
 {% endif %}
-
 </body>
 </html>
