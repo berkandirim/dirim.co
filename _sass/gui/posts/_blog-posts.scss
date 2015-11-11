@@ -1,4 +1,6 @@
 .post {
+    max-width: 600px;
+    margin: auto;
     &-list {
         padding-left: 0;
         list-style: none;
@@ -17,9 +19,18 @@
 .blog-post {
     h1 {
         margin-bottom: 0;
+        text-align: center;
     }
+
+
     .date {
         @extend h6;
+        display: block;
+        text-align: center;
+    }
+
+    .codepen {
+        margin-bottom: 30px;
     }
 }
 

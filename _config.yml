@@ -6,6 +6,7 @@ exclude: ['README.md', '.sass-cache', 'bower_components']
 include: ['.htaccess', 'fonts']
 markdown: redcarpet
 highlighter: pygments
+pygments_options: ['lineanchors', 'linenos']
 permalink: /blog/:year/:month/:day/:title/
 sass:
   style: compressed
