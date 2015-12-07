@@ -21,3 +21,9 @@ a {
     }
 
 }
+
+.bd_touchevents {
+    a {
+        @include transition(none);
+    }
+}
