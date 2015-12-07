@@ -26,7 +26,6 @@ a {
     a {
         @include transition(none);
         &:after {
-            display: none;
         }
     }
 }
