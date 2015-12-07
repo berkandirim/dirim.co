@@ -56,3 +56,22 @@
 .comments {
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 600px) {
+    .post {
+        &-list {
+            padding-left: 0;
+            list-style: none;
+            .date {
+                font-weight: 400;
+                @include font-size(16px);
+            }
+        }
+        &-title {
+            @include font-size(24px);
+        }
+        &-body {
+            margin: 40px 0;
+        }
+    }
+}
