@@ -1,3 +1,11 @@
+code {
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: $color-light-gray;
+    @include font-size(13px);
+    vertical-align: text-bottom;
+}
+
 .highlight {
     margin-bottom: 20px;
     padding: 2px 10px;
