@@ -30,6 +30,18 @@
     }
 }
 
+.bd_touchevents {
+    a {
+        padding: 2px;
+    }
+    .main-nav a {
+        padding: 12px 4px 6px; // larger touch area
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .main-nav {
         text-align: left;
