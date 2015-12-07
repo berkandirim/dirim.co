@@ -25,5 +25,8 @@ a {
 .bd_touchevents {
     a {
         @include transition(none);
+        &:after {
+            display: none;
+        }
     }
 }
