@@ -8,17 +8,15 @@ code {
 
 .highlight {
     margin-bottom: 20px;
-    padding: 2px 10px;
-    border: 1px solid $color-light-gray;
+    padding: 0 10px;
+    background-color: $color-light-gray;
+    border: 1px solid $color-gray;
     line-height: 1.2;
-    code {
-        @include font-size(13px);
+    pre {
+        overflow-y: hidden;
     }
-
-    .lineno {
-        padding-right: 4px;
-        color: $color-gray;
-        border-right: 1px solid $color-gray;
+    code {
+        background-color: transparent;
     }
 
     .c { color: #999988; font-style: italic } /* Comment */
@@ -82,4 +80,5 @@ code {
     .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 }
+
 

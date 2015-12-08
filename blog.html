@@ -9,9 +9,9 @@ title: Blog
 <ul class="post-list">
     {% for post in site.posts %}
     <li>
+        <span class="date">{{post.date | date: '%Y/%m/%d'}}</span>
         <h2 class="post-title">
-            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a> —
-            <span class="date">{{post.date | date: '%Y/%m/%d'}}</span>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         </h2>
     </li>
     {% endfor %}
