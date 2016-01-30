@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "caffeine": "~0.5.1",
-    "melange": "~0.6.1"
+    "caffeine": "latest",
+    "melange": "latest"
   }
 }

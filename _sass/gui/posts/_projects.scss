@@ -32,3 +32,9 @@
         color: $color-dark-gray;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .project-link:hover {
+        padding-left: 10px;
+    }
+}

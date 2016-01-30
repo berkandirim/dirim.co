@@ -1,7 +1,8 @@
 .site-message {
-    font-size: 3.375em;
+    @include font-size(48px);
     font-weight: 700;
     line-height: 1.2;
+    letter-spacing: -0.02em;
     margin: 20px 0 60px;
 }
 
@@ -27,13 +28,13 @@
 
 @media screen and (max-width: 600px) {
     .site-message {
-        font-size: 2em;
+        @include font-size(36px);
     }
 }
 
 @media screen and (max-width: 400px) {
     .site-message {
-        font-size: 1.5em;
+        @include font-size(24px);
         line-height: 1.4;
     }
 }

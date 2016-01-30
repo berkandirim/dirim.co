@@ -40,7 +40,6 @@ h4 {
 
 h5 {
     @include font-size(16px);
-    font-size: 1em;
 }
 
 h6 {
@@ -60,6 +59,6 @@ p {
 .caption {
     font-family: "ff-meta-serif-web-pro", Georgia, Times, serif;
     @include font-size(12px);
-    letter-spacing: .5px;
+    font-weight: 700;
     color: $color-dark-gray;
 }
