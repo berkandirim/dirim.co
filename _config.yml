@@ -4,7 +4,7 @@ timezone: Europe/Istanbul
 destination: _build
 exclude: ['README.md', '.sass-cache', 'bower_components']
 include: ['.htaccess', 'fonts']
-highlighter: pygments
+highlighter: rogue
 pygments_options: ['lineanchors']
 permalink: /blog/:year-:month-:day/:title/
 sass:
