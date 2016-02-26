@@ -10,6 +10,16 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+::selection {
+    color: $color-white;
+    background-color: $color-black;
+}
+
+::-moz-selection {
+    color: $color-white;
+    background-color: $color-black;
+}
+
 h1, h3, h4 {
     font-family: "ff-meta-serif-web-pro", Georgia, Times, serif;
     font-weight: 700;
