@@ -4,7 +4,6 @@ timezone: Europe/Istanbul
 destination: _build
 exclude: ['README.md', '.sass-cache', 'bower_components']
 include: ['.htaccess', 'fonts']
-markdown: redcarpet
 highlighter: pygments
 pygments_options: ['lineanchors']
 permalink: /blog/:year-:month-:day/:title/
