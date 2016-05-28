@@ -1,4 +1,12 @@
 .page-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
+
+}
+
+.content {
+    position: absolute;
+    max-width: 800px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
 }
