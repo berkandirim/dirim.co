@@ -3,7 +3,7 @@
 {% include layout/_head.html %}
 <body class="{% if page.path contains '_posts' %}blog-post{% elsif page.path contains '_drafts' %}blog-post draft{% else %}{{page.class}}{% endif %}">
     <div class="page-wrapper row">
-        <section class="content">
+        <section class="content eighteen-columns">
             {{content}}
             {% include home/_contact.html %}
         </section>
