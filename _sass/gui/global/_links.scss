@@ -1,33 +1,16 @@
 a {
     padding: 0;
-    color: $color-black;
+    color: $color-red;
     text-decoration: none;
-    @include transition(all ease-in-out 300ms);
-    &:after {
-        content: '';
-        display: block;
-        margin: auto;
-        width: 100%;
-        border-bottom: 1px solid $color-black;
-        @include transition(all ease-in-out 300ms);
-        text-align: center;
-    }
-
-
+    @include transition(all ease-in-out 200ms);
     &:hover {
-        color: $color-red;
-
-        &:after {
-            width: 0;
-        }
+        color: $color-dark-gray;
     }
-
 }
 
 .bd_touchevents {
     a {
         padding: 2px;
-        @include transition(none);
         &:after {
             display: none;
         }
