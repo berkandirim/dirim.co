@@ -1,6 +1,6 @@
 {
   "name": "caffeine",
-  "version": "0.5.1",
+  "version": "0.7.1",
   "homepage": "https://github.com/bcinarli/caffeine",
   "authors": [
     "Bilal Cinarli <bcinarli@gmail.com>"
@@ -24,14 +24,13 @@
     "tests",
     "test"
   ],
-  "_release": "0.5.1",
+  "_release": "0.7.1",
   "_resolution": {
     "type": "version",
-    "tag": "0.5.1",
-    "commit": "9a8c3b41656b235cc7c21bda3c56faeb9c4b57ef"
+    "tag": "0.7.1",
+    "commit": "8505dff53304a38cd87a71062d541b5a313bcbc7"
   },
-  "_source": "git://github.com/bcinarli/caffeine.git",
-  "_target": "~0.5.1",
-  "_originalSource": "caffeine",
-  "_direct": true
+  "_source": "https://github.com/bcinarli/caffeine.git",
+  "_target": "*",
+  "_originalSource": "caffeine"
 }

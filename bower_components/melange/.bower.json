@@ -30,8 +30,7 @@
     "tag": "0.6.1",
     "commit": "06049b09116d91cba2ad739ef287d7f7a79b7aa7"
   },
-  "_source": "git://github.com/bcinarli/melange.git",
-  "_target": "~0.6.1",
-  "_originalSource": "melange",
-  "_direct": true
+  "_source": "https://github.com/bcinarli/melange.git",
+  "_target": "*",
+  "_originalSource": "melange"
 }
