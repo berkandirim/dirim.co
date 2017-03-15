@@ -29,13 +29,19 @@ a {
     }
 }
 
+h1 {
+    margin-bottom: .2em;
+}
+
+h2 {
+    margin-bottom: 1em;
+    @include font-size(12px);
+    font-weight: 400;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
 .contact {
-    &-title {
-        @include font-size(12px);
-        font-weight: 400;
-        letter-spacing: .2em;
-        text-transform: uppercase;
-    }
     &-links {
         margin-left: -4px;
         a {

@@ -9,6 +9,23 @@ body {
     color: $color-black;
 }
 
-.logo {
-    margin-bottom: 1em;
+.flat-list {
+    list-style: none;
+}
+
+.project-list {
+    li {
+        &:before {
+            content: '― ';
+        }
+    }
+}
+
+.project-name {
+    font-weight: 700;
+    color: $color-black;
+    text-decoration: underline;
+    &:hover {  
+        color: $link-color;
+    }
 }
