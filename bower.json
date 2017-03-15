@@ -1,6 +1,6 @@
 {
   "name": "berkandirim",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "homepage": "http://dirim.co",
   "authors": [
     "Berkan Dirim <berkandirim@gmail.com>"
@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "caffeine": "latest",
-    "melange": "latest"
+    "ress": "^1.2.2",
+    "caffeine": "^0.7.1"
   }
 }

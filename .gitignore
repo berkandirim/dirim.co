@@ -1,6 +1,6 @@
-_build
 .sass-cache
 .idea
 bower_components
 node_modules
 *.iml
+*.map

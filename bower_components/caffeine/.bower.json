@@ -31,6 +31,7 @@
     "commit": "8505dff53304a38cd87a71062d541b5a313bcbc7"
   },
   "_source": "https://github.com/bcinarli/caffeine.git",
-  "_target": "*",
-  "_originalSource": "caffeine"
+  "_target": "^0.7.1",
+  "_originalSource": "caffeine",
+  "_direct": true
 }

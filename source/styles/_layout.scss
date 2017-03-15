@@ -1,0 +1,18 @@
+/* @author Berkan Dirim */
+
+/** -------------------------------------------
+    
+    ------------------------------------------- **/
+
+%row {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.page-wrapper {
+    @extend %row;
+    margin: 30px;
+}
