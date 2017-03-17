@@ -29,3 +29,18 @@ body {
         color: $link-color;
     }
 }
+
+.contact {
+    &-links {
+        margin-left: -4px;
+        a {
+            padding: 4px;
+            margin-right: 4px;
+            @include font-size(20px);
+            color: $color-gray;
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+}
