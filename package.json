@@ -1,6 +1,6 @@
 {
   "name": "dirim.co",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "My personal website",
   "main": "index.js",
   "repository": {
@@ -20,7 +20,7 @@
   "scripts": {
     "prestart": "npm install; bower install",
     "sass": "sass --watch source/styles:assets/css",
-    "browser-sync": "browser-sync start -s -f './assets/**/*.css' './*.html'",
+    "browser-sync": "browser-sync start -s -f './assets/**/*.css' './*.html' -open",
     "start": "npm run sass && browser-sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

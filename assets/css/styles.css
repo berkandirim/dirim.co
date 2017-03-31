@@ -1005,8 +1005,8 @@ video {
   max-width: 800px;
   margin: 30px; }
 
-section {
-  margin-bottom: 2em; }
+.section {
+  margin-bottom: 3em; }
 
 /* @author Berkan Dirim */
 /** -------------------------------------------
@@ -1043,6 +1043,10 @@ h2 {
   font-weight: 400;
   letter-spacing: .2em;
   text-transform: uppercase; }
+
+h3 {
+  font-size: 16px;
+  font-size: 1rem; }
 
 /* @author Berkan Dirim */
 /** -------------------------------------------
@@ -1089,11 +1093,10 @@ body {
 .flat-list {
   list-style: none; }
 
-.project-list li:before {
-  content: '― '; }
+.project-list p {
+  margin-bottom: 1rem; }
 
 .project-name {
-  font-weight: 700;
   color: #333;
   text-decoration: underline; }
   .project-name:hover {
@@ -1106,7 +1109,7 @@ body {
     margin-right: 4px;
     font-size: 20px;
     font-size: 1.25rem;
-    color: #bbb; }
+    color: #aaa; }
     .contact-links a:hover {
       color: #333; }
 
