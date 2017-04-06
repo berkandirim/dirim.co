@@ -15,12 +15,14 @@
   "homepage": "https://github.com/berkandirim/berkandirim.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
-    "sass": "^0.5.0"
+    "sass": "^0.5.0",
+    "uglify-js": "^2.8.21"
   },
   "scripts": {
     "prestart": "npm install; bower install",
     "sass": "sass --watch source/styles:assets/css",
     "browser-sync": "browser-sync start -s -f './assets/**/*.css' './*.html' -open",
+    "uglify": "uglifyjs source/scripts/app.js -o assets/js/app.min.js",
     "start": "npm run sass && browser-sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
