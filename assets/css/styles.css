@@ -19,6 +19,7 @@
    # Global selectors
    # ================================================================= */
 html {
+  height: 100%;
   box-sizing: border-box;
   overflow-y: scroll;
   /* All browsers without overlaying scrollbars */
@@ -1003,7 +1004,7 @@ video {
 
 .page-wrapper {
   max-width: 800px;
-  margin: 30px; }
+  padding: 30px; }
 
 .section {
   margin-bottom: 3em; }
@@ -1088,6 +1089,7 @@ h3 {
     ------------------------------------------- **/
 body {
   background-color: #fdfdfd;
+  background-image: linear-gradient(to bottom, #ececec 0%, #fdfdfd 100%);
   color: #333; }
 
 .flat-list {
