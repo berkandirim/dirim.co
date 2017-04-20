@@ -1015,12 +1015,12 @@ video {
     ------------------------------------------- **/
 html {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.5; }
 
 body {
   font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   text-rendering: optimizeLegibility; }
 
 p {
@@ -1113,5 +1113,13 @@ body {
     color: #aaa; }
     .contact-links a:hover {
       color: #333; }
+
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 24px; }
+
+  .page-wrapper {
+    max-width: 1156px;
+    margin: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
