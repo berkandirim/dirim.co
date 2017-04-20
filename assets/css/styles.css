@@ -1089,7 +1089,6 @@ h3 {
     ------------------------------------------- **/
 body {
   background-color: #fdfdfd;
-  background-image: linear-gradient(to bottom, #ececec 0%, #fdfdfd 100%);
   color: #333; }
 
 .flat-list {
