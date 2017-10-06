@@ -1,7 +1,20 @@
-.sass-cache
-.idea
-bower_components
+# dependencies
 node_modules
-*.iml
-*.map
-/npm-debug.log
+
+# logs
+*.log
+
+# Nuxt build
+.nuxt
+
+# Intellij idea
+.idea
+*iml
+
+# VSCode
+.vscode
+
+# Generated files
+static/manifest*.json
+static/sw.js
+static/workbox-sw*.js
