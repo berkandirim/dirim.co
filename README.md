@@ -1,4 +1,4 @@
-# dirim
+# dirim.co
 
 My personal website
 
