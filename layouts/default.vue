@@ -16,7 +16,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 721px) {
       font-size: $text-size/2*3;
     }
   }

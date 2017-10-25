@@ -8,6 +8,8 @@
   .contact {
     &-links {
       margin-left: -4px;
+      overflow-x: auto;
+      padding: 0 0 10px;
       a {
         padding: 4px;
         margin-right: 4px;
