@@ -31,12 +31,12 @@ const fileManifest = [
     "revision": "380fa4d2513f5fc4e2c7e120c5d686b1"
   },
   {
-    "url": "/_nuxt/manifest.ef97b005b5038cc4e71f.js",
-    "revision": "4464acf2a271d29a319a1206a35f94d5"
+    "url": "/_nuxt/manifest.d6599e36f4df4f6e50e8.js",
+    "revision": "ece4aad49ca7b275aaf82f907941d049"
   },
   {
-    "url": "/_nuxt/pages/index.9a297f38bed5adf5fd1a.js",
-    "revision": "6f03d352d5dfa96e363df5053d1a4c48"
+    "url": "/_nuxt/pages/index.fed6048326ff6a1b864b.js",
+    "revision": "0b22611345db92e8b06f6299619ab8f4"
   }
 ];
 

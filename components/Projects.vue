@@ -27,7 +27,7 @@
           },
           {
             name: 'jQuery Listswap',
-            link: 'http://dirim.co/jquery-listswap',
+            link: 'http://berkandirim.github.io/jquery-listswap',
             description: 'A jquery plugin that lets you swap options between select lists.'
           },
           {
