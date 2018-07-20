@@ -1,5 +1,5 @@
 <template>
-  <p class="info-text">Hi! I'm <strong>Berkan Dirim.</strong><br>I'm a frontend developer currently located in Istanbul and working at <a href="http://www.dogantv.com.tr/" target="_blank">Dogan TV Holding</a>.</p>
+  <p class="info-text">Hi! I'm <strong>Berkan Dirim.</strong><br>I'm a frontend developer currently located in Nuremberg and working at <a href="https://www.adidas-group.com/" target="_blank">adidas</a>.</p>
 </template>
 
 <style lang="scss">
