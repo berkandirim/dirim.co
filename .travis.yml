@@ -6,6 +6,9 @@ install:
 script:
   - npm run build
   - npm run generate
+  - git config --global user.email "$GITEMAIL"
+  - git config --global user.name "$GITNAME"
+  - git
   - git add .
   - git commit -m "new content"
   - git push origin master
