@@ -8,5 +8,5 @@ script:
   - npm run generate
   - git add .
   - git commit -m "new content"
-  - git push
+  - git push origin master
   - npm run deploy
