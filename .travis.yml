@@ -6,9 +6,13 @@ install:
 script:
   - npm run build
   - npm run generate
-  - git config --global user.email $GITEMAIL
-  - git config --global user.name $GITNAME
-  - git add .
-  - git commit -m "new content"
-  - git push origin master
-  - npm run deploy
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  local-dir: /dist
+  on:
+    branch: master
+
+
