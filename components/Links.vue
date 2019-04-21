@@ -15,31 +15,27 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       links: [
         {
-          name: "Twitter",
-          link: "https://www.twitter.com/berkandirim"
+          name: 'Twitter',
+          link: 'https://www.twitter.com/berkandirim'
         },
         {
-          name: "LinkedIn",
-          link: "https://tr.linkedin.com/in/berkandirim"
+          name: 'LinkedIn',
+          link: 'https://tr.linkedin.com/in/berkandirim'
         },
         {
-          name: "Github",
-          link: "https://www.github.com/berkandirim"
+          name: 'Github',
+          link: 'https://www.github.com/berkandirim'
         },
         {
-          name: "Codepen",
-          link: "https://www.codepen.io/berkandirim/"
-        },
-        {
-          name: "Email",
-          link: "mailto:berkandirim@gmail.com"
+          name: 'Email',
+          link: 'mailto:berkandirim@gmail.com'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>

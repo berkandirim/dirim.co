@@ -5,8 +5,8 @@
   "author": "Berkan Dirim <>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest",
-    "@nuxtjs/pwa": "latest"
+    "@nuxtjs/pwa": "latest",
+    "nuxt": "latest"
   },
   "scripts": {
     "dev": "nuxt",
