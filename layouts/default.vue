@@ -7,7 +7,7 @@
   @import "../assets/scss/reset";
 
   html {
-    font-family: $sans-font;
+    font-family: $monospace-font;
     font-size: $text-size;
     line-height: $line-height;
     word-spacing: 1px;
@@ -17,7 +17,7 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     @media screen and (min-width: 721px) {
-      font-size: $text-size/2*3;
+      font-size: $large-text-size;
     }
   }
 
@@ -50,14 +50,17 @@
   }
 
   h2 {
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
+    padding-bottom: .5em;
     font-size: .75rem;
     font-weight: 400;
     letter-spacing: .2em;
     text-transform: uppercase;
+    border-bottom: 1px dashed $color-gray;
   }
 
   h3 {
     font-size: 1rem;
+    margin-bottom: .5em;
   }
 </style>

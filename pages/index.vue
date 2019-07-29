@@ -52,6 +52,7 @@
 
   .page-wrapper {
     max-width: 800px;
+    margin: auto;
     padding: 30px;
     &:after {
       content: '';
@@ -60,7 +61,6 @@
     }
     @media screen and (min-width: 1025px) {
       max-width: 1156px;
-      margin: auto;
     }
   }
 

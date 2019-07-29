@@ -57,8 +57,9 @@
   }
 
   .project-name {
-    color: $color-black;
-    text-decoration: underline;
+    padding: .2em .4em;
+    background-color:  $color-black;
+    color: $color-white;
     &:hover {
       color: $link-color;
     }
