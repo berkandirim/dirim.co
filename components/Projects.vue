@@ -57,7 +57,7 @@
   }
 
   .project-name {
-    padding: .2em .4em;
+    padding: .3em .4em .2em;
     background-color:  $color-black;
     color: $color-white;
     &:hover {
