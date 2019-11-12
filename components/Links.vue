@@ -8,6 +8,7 @@
           :title="link.name"
           :href="link.link"
           target="_blank"
+          rel="noreferrer"
         >{{link.name}}</a>
       </li>
     </ul>

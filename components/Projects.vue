@@ -2,8 +2,8 @@
   <section class="projects section">
     <h2 class="section-title">Some Projects</h2>
     <ul class="project-list">
-      <li v-for="project in projects">
-        <h3><a class="project-name" :href="project.link" target="_blank">{{project.name}}</a></h3>
+      <li v-for="project in projects" :key="this.slugify(project.name)">
+        <h3><a class="project-name" :href="project.link" target="_blank" rel="noreferrer">{{project.name}}</a></h3>
         <p v-html="project.description"></p>
       </li>
     </ul>
@@ -12,6 +12,11 @@
 
 <script>
   export default {
+    methods: {
+      slugify (str) {
+        return str.toLowercase().split(' ').join('-');
+      }
+    },
     data () {
       return {
         projects: [
