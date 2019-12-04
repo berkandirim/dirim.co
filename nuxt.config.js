@@ -1,4 +1,7 @@
 var themeColor = '#cc4f38'
+var gFonts = {
+  monospace: 'https://fonts.googleapis.com/css?family=Cousine:400,700&display=swap'
+}
 
 module.exports = {
   /*
@@ -18,7 +21,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1' }
     ],
     link: [
-      {href: 'https://fonts.googleapis.com/css?family=Cousine:400,700&display=swap', rel: 'stylesheet'}
+      {href: gFonts.monospace, rel: 'stylesheet'}
     ]
   },
   /*
