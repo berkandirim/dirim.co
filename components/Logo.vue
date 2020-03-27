@@ -1,7 +1,11 @@
 <template>
-  <h1 class="logo">
+  <div>
     <img class="logo" src="~/assets/images/logo.png" :srcset="`${retinaLogo} 2x`" alt="Berkan Dirim" rel="logo">
-  </h1>
+    <h1 class="site-title">
+      Berkan Dirim
+    </h1>
+  </div>
+
 </template>
 
 <script>
@@ -15,3 +19,9 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .logo {
+    margin-bottom: 1em;
+  }
+</style>

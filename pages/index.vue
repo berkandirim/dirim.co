@@ -5,6 +5,7 @@
       <info/>
     </header>
     <projects/>
+    <skills class="section"/>
     <links/>
     <div v-if="!online" :class="['network', online ? 'online' : 'offline']">
       <div class="circle"></div>
@@ -18,9 +19,10 @@
   import Projects from '~/components/Projects.vue'
   import Info from '~/components/Info.vue'
   import Links from '~/components/Links.vue'
+  import Skills from '~/components/Skills.vue'
 
   export default {
-    components: {Logo, Projects, Info, Links},
+    components: {Logo, Projects, Info, Links, Skills},
     data () {
       return {
         online: true
@@ -51,7 +53,7 @@
   @import "../assets/scss/vars";
 
   .page-wrapper {
-    max-width: 800px;
+    max-width: 720px;
     margin: auto;
     padding: 30px;
     &:after {
@@ -60,7 +62,8 @@
       clear: both;
     }
     @media screen and (min-width: 1025px) {
-      max-width: 1156px;
+      max-width: 960px;
+      margin-top: 100px;
     }
   }
 
