@@ -37,7 +37,7 @@
 
   .link {
     display: inline-block;
-    padding: 3px 4px 0;
+    padding: 2px 4px 0;
     color: $color-black;
     text-decoration: none;
     transition: all ease-in-out 200ms;
