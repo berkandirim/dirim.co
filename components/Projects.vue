@@ -1,9 +1,10 @@
 <template>
   <section class="projects section">
     <h2 class="section-title">Some Projects</h2>
+    <p>Here are a few personal and commercial projects.</p>
     <ul class="project-list">
-      <li v-for="project in projects" :key="this.slugify(project.name)">
-        <h3><a class="project-name" :href="project.link" target="_blank" rel="noreferrer">{{project.name}}</a></h3>
+      <li v-for="project in projects" :key="slugify(project.name)">
+        <h3><a class="project-name link" :href="project.link" target="_blank" rel="noreferrer">{{project.name}}</a></h3>
         <p v-html="project.description"></p>
       </li>
     </ul>
@@ -14,7 +15,7 @@
   export default {
     methods: {
       slugify (str) {
-        return str.toLowercase().split(' ').join('-');
+        return str.toLowerCase().split(' ').join('-');
       }
     },
     data () {
@@ -43,7 +44,7 @@
           {
             name: 'Jekyll UXRocket',
             link: 'https://github.com/berkandirim/jekyll-uxrocket',
-            description: 'A Jekyll boilerplate using <a href="https://github.com/uxrocket">UX Rocket</a> elements, <a href="https://github.com/bcinarli/melange">Melange</a> and <a href="https://github.com/bcinarli/caffeine">Caffeine.</a>'
+            description: 'A Jekyll boilerplate using <a class="link" href="https://github.com/uxrocket">UX Rocket</a> elements, <a class="link" href="https://github.com/bcinarli/melange">Melange</a> and <a class="link" href="https://github.com/bcinarli/caffeine">Caffeine</a>.'
           }
         ]
       }
@@ -62,11 +63,6 @@
   }
 
   .project-name {
-    padding: .3em .4em .2em;
-    background-color:  $color-black;
-    color: $color-white;
-    &:hover {
-      color: $link-color;
-    }
+    margin-left: -4px;
   }
 </style>
