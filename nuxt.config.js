@@ -36,5 +36,6 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa'
-  ]
+  ],
+  target: 'static'
 }
