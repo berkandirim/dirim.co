@@ -4,27 +4,27 @@
   "description": "Personal website",
   "author": "Berkan Dirim <berkandirim@gmail.com>",
   "private": true,
-  "dependencies": {
-    "@nuxtjs/pwa": "latest",
-    "nuxt": "latest"
-  },
   "scripts": {
-    "dev": "nuxt",
+    "start:dev": "nuxt",
+    "start:prod": "nuxt start",
     "build": "nuxt build",
-    "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
+  "dependencies": {
+    "@nuxtjs/pwa": "latest",
+    "nuxt": "latest"
+  },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^4.18.2",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-html": "^2.0.0",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.13.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.1.1"
   }
 }
