@@ -1,7 +1,9 @@
 module.exports = {
   themeColor: '#fdfdfd',
   gFonts: {
-    monospace: 'https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&display=swap',
-    sansSerif: 'https://fonts.googleapis.com/css?family=Inter:700&display=swap'
-  }
+    monospace: 'https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap',
+    sansSerif: 'https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap'
+  },
+  fontFamily: 'monospace',
 }
+

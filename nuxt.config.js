@@ -1,4 +1,4 @@
-const {gFonts, themeColor} = require('./config')
+const {gFonts, themeColor, fontFamily} = require('./config')
 
 module.exports = {
   /*
@@ -13,12 +13,14 @@ module.exports = {
     title: 'Berkan Dirim · Software Engineer',
     meta: [
       { charset: 'UTF-8' },
-      { name: 'description', content: 'Software engineer currently located in Nuremberg.' },
+      { name: 'description', content: 'Software engineer currently located in Amstelveen, NL.' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1' }
     ],
     link: [
-      {href: gFonts.monospace, rel: 'stylesheet'}
+      {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+      {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true},
+      {href: gFonts[fontFamily], rel: 'stylesheet'}
     ]
   },
   /*
@@ -36,5 +38,6 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa'
-  ]
+  ],
+  target: 'static'
 }

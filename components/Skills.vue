@@ -7,14 +7,13 @@
       <li>Javascript (Client & Server side)</li>
       <li>Ampscript (Email development)</li>
       <li>HTML</li>
-      <li>CSS</li>
+      <li>CSS/Sass</li>
     </ul>
     <h3>Deployment - CI/CD</h3>
     <ul>
       <li>Jenkins</li>
       <li>Travis CI</li>
       <li>AWS</li>
-      <li>MS Azure</li>
       <li>Docker</li>
       <li>Kubernetes</li>
     </ul>
@@ -33,7 +32,7 @@
 </template>
 
 <style lang="scss">
-  .skills ul {
-    margin: 0 0 20px 20px;
-  }
+.skills ul {
+  margin: 0 0 20px 20px;
+}
 </style>
